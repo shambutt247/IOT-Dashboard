@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <link href="assets/css/iot_web_content.css" rel="stylesheet" />
+  <link href="assets/css/iot_web_header.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.min.css" />
+
+  <!--CDN LINKS for React !!-->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="react_graph.js"></script>
+
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' />
+
+</head>
+
+<body>
+
+  <div id="graph_container"></div>
+  <div class=header-dash>
+
+    <div class=side-menu>
+      <div class=side-menu-1>
+        <img src="assets/img/menu.png">
+      </div>
+    </div>
+
+
+    <div class=time-clock-day>
+      <div class=time-display>
+        1:21
+      </div>
+      <div class=pm-am>
+        PM
+      </div>
+      <div class=day-month-year>
+        <div class=day>
+          Sun
+        </div>
+        <div class=month-year>
+          Mar 13
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class=weather>
+      <div class=weather-image>
+        <div class=cloud-rain>
+          <img src="assets/img/cloud-drizzle.png">
+        </div>
+      </div>
+
+      <div class=temperature>
+        <div class=temp-digit>
+          14
+        </div>
+        <div class=temp-celcius>
+          °C
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=content>
+    <div class=left-hand-screen>
+      <div class=gas-usage-graph>
+        <div class=header-gas>
+          <div class=gas-img>
+            <div class=gas-img-air>
+              <img src="assets/img/icon.png">
+            </div>
+          </div>
+          <div class=gas-text>
+            Gas Usage
+          </div>
+          <div class=gas-right-elements>
+            <div class=drop-down>
+              <div class=selectWrapper>
+                <select class="selectBox">
+                  <option>
+                    Monthly
+                  </option>
+                </select>
+              </div>
+
+
+            </div>
+            <div class=gas-menu>
+              <div class=gas-img-air>
+                <img src="assets/img/Shape 6.png">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class=gas-options>
+          <label class="container">Target Amount
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container" style="margin-left:38px;">Current Usage
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class=bill-bar>
+          <div class=left-bill>
+            <div class=mo-img>
+              <div class=mo-img-calender>
+                <img src="assets/img/Shape 7.png">
+              </div>
+            </div>
+            <div class=text-mon>
+              Monthly
+            </div>
+            <div class=text-mon style="margin-left:20px; ">
+              46.1 Litres
+            </div>
+          </div>
+          <div class=right-bill>
+            <div class=mo-img>
+              <div class=mo-img-calender>
+                <img src="assets/img/Shape 8.png">
+              </div>
+            </div>
+            <div class=text-mon style=margin-left:14px;>
+              Total
+            </div>
+            <div class=text-mon style="margin-left:12px; ">
+              $ 62.5
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=mess-tariff>
+        <div class=messages>
+          <div class=header-mess>
+            <div class=gas-img style="margin-left:23px;">
+              <div class=gas-img-air>
+                <img src="assets/img/Shape 14.png">
+              </div>
+            </div>
+            <div class=gas-text style="margin-left:14px; margin-top:18px; font-size:16px;">
+              Messages
+            </div>
+            <div class=gas-right-elements>
+              <div class=gas-menu>
+                <div class=gas-img-air>
+                  <img src="assets/img/Shape 6.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=message-recieved>
+            <div class=texts-message>
+              <div class=message-text-recieved>
+                Too cultivated use solicitude
+              </div>
+              <div class=message-text-recieved style="font-size:12px;color: #b6bfce;">
+                March 5, 08:95 PM
+              </div>
+            </div>
+            <div class=gas-menu style="margin-right:12px;display:inline-block;float:right;">
+              <div class=gas-img-air>
+                <img src="assets/img/Shape 15.png">
+              </div>
+            </div>
+          </div>
+          <div class=message-recieved style="margin-top:8px;box-shadow: 0px 3px 5px 0 rgba(0, 173, 228, 0.1);">
+            <div class=texts-message>
+              <div class=message-text-recieved>
+                Too cultivated use solicitude eeeeeeeeeeeeee
+              </div>
+              <div class=message-text-recieved style="font-size:12px;color: #b6bfce;">
+                March 5, 08:95 PM
+              </div>
+            </div>
+            <div class=gas-menu style="margin-right:12px;display:inline-block;float:right;">
+              <div class=gas-img-air>
+                <img src="assets/img/Shape 15.png">
+              </div>
+            </div>
+          </div>
+          <div class=message-recieved style="margin-top:8px;box-shadow: 0px 3px 5px 0 rgba(0, 173, 228, 0.1);">
+            <div class=texts-message>
+              <div class=message-text-recieved>
+                Too cultivated use solicitude eeeeeeeeeeeeee
+              </div>
+              <div class=message-text-recieved style="font-size:12px;color: #b6bfce;">
+                March 5, 08:95 PM
+              </div>
+            </div>
+            <div class=gas-menu style="margin-right:12px;display:inline-block;float:right;">
+              <div class=gas-img-air>
+                <img src="assets/img/Shape 15.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=tariff>
+          <div class=header-mess>
+            <div class=gas-img style="margin-left:20px;">
+              <div class=gas-img-air>
+                <img src="assets/img/Shape 8.png">
+              </div>
+            </div>
+            <div class=gas-text style="margin-left:14px; margin-top:18px; font-size:16px;">
+              Tariff
+            </div>
+            <div class=gas-right-elements>
+              <div class=gas-menu>
+                <div class=gas-img-air>
+                  <img src="assets/img/Shape 6.png">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=message-text-recieved style="margin-left:18px;margin-top:9px;margin-bottom:11px;">
+            Current Quater (Dec-Mar)
+          </div>
+          <div class=details-tariff>
+            <div class=details-tariff-left>
+              <div class=message-text-recieved style="font-size:30px;margin-left:18px;display: block;width:auto; height: 29px;">
+                $6500
+              </div>
+              <div class=more-tariff>
+                <div class=gas-img style="margin-left:23px;">
+
+                  <img src="assets/img/Shape 19.png" style="margin-top: 9px;">
+
+                </div>
+                <div class=gas-text style="margin-left:6px; font-size:17px;">
+                  $250
+                </div>
+              </div>
+
+              <div class=message-text-recieved style="font-size:12px;color: #b6bfce;display:inline-block;float: left;margin-left:22px; ">
+                Jan 1
+              </div>
+              <div class=message-text-recieved style="font-size:12px;color: #b6bfce;display:inline-block;float: right;margin-right: 18px;">
+                Mar 31
+              </div>
+
+              <div class="meter">
+                <span style="width: 45%"></span>
+              </div>
+            </div>
+            <div class=chart-360>
+              <div style="width: 100%;height:89px;">
+
+              </div>
+              <div class=message-text-recieved style="font-size:12px;color: #b6bfce;display:block;">
+                  Until End of March
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class=right-hand-screen>
+        <div class=electric-usage-graph>
+            <div class=header-electric>
+              <div class=gas-img>
+                <div class=gas-img-air>
+                  <img src="assets/img/Vector Smart Object.png">
+                </div>
+              </div>
+              <div class=gas-text>
+                Electric usage
+              </div>
+              <div class=gas-right-elements>
+                <div class=drop-down>
+                  <div class=selectWrapper>
+                    <select class="selectBox">
+                      <option>
+                        Today
+                      </option>
+                    </select>
+                  </div>
+    
+    
+                </div>
+                <div class=gas-menu>
+                  <div class=gas-img-air>
+                    <img src="assets/img/Shape 6.png">
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <div class=gas-options>
+              <label class="container">Target Amount
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+    
+              <label class="container" style="margin-left:38px;">Current Usage
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class=bill-bar>
+              <div class=left-bill>
+                <div class=mo-img>
+                  <div class=mo-img-calender>
+                    <img src="assets/img/Shape 7.png">
+                  </div>
+                </div>
+                <div class=text-mon>
+                  Monthly
+                </div>
+                <div class=text-mon style="margin-left:20px; ">
+                  157 kWh
+                </div>
+              </div>
+              <div class=right-bill>
+                <div class=mo-img>
+                  <div class=mo-img-calender>
+                    <img src="assets/img/Shape 8.png">
+                  </div>
+                </div>
+                <div class=text-mon style=margin-left:14px;>
+                  Total
+                </div>
+                <div class=text-mon style="margin-left:12px; ">
+                  $ 95.4
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Account and Settings Section-->
+
+          <div class=mess-tariff style="margin-left:11px;">
+            <!--Account Section-->
+            <div class=messages>
+              <div class=header-mess>
+                <div class=gas-img style="margin-left:20px;">
+                  <div class=gas-img-air>
+                    <img src="assets/img/Shape 23.png">
+                  </div>
+                </div>
+                <div class=gas-text style="margin-left:14px; margin-top:18px; font-size:16px;">
+                  Account
+                </div>
+                <div class=gas-right-elements>
+                  <div class=gas-menu>
+                    <div class=gas-img-air>
+                      <img src="assets/img/Shape 6.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=message-text-recieved style="margin-left:18px;margin-top:9px;margin-bottom:11px;">
+                  Current <br>Balance
+                </div>
+            </div>
+
+            <!--Settings Section-->
+            <div class=tariff>
+              <div class=header-mess>
+                <div class=gas-img style="margin-left:20px;">
+                  <div class=gas-img-air>
+                    <img src="assets/img/Shape 24.png">
+                  </div>
+                </div>
+                <div class=gas-text style="margin-left:14px; margin-top:18px; font-size:16px;">
+                  Settings
+                </div>
+                <div class=gas-right-elements>
+                  <div class=gas-menu>
+                    <div class=gas-img-air>
+                      <img src="assets/img/Shape 6.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=settings-section>
+                  <div class=message-text-recieved style="margin-left:20px;display: inline-block;float: left;">
+                      Screen Brightness
+                    </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>

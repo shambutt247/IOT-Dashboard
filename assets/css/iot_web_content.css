@@ -1,0 +1,339 @@
+.content{
+ height: 680px;
+margin-left: 51px;
+margin-right: 51px;
+
+}
+.left-hand-screen{
+ width:  50%;
+ height: 670px;
+float:left;
+
+}
+.gas-usage-graph{
+ width: auto;
+ height: 370px;
+display: block;
+padding-top:24px;
+
+}
+.header-gas{
+ margin-top:7px;
+ height: 26px;
+ width: 580px;
+
+}
+.gas-img{
+margin-left:18px;
+height: inherit;
+float:left;
+}
+.gas-img-air{
+
+height: inherit;
+display: table-cell;
+vertical-align: middle;
+}
+.gas-text{
+margin-left:21px;
+padding-top:1px;
+float: left;
+  font-family: Myriad Pro;
+  font-size: 20px;
+  text-align: left;
+  color: #53c6ea;
+}
+.gas-right-elements{
+ float: right;
+ height: inherit;
+ width: auto;
+}
+.drop-down{
+ float: left;
+ margin-left:18px;
+
+}
+.selectWrapper{
+ border-radius:26px;
+ display:inline-block;
+ overflow:hidden;
+ border:1px solid #53c6ea;
+}
+.selectBox{
+ width: 100px;
+ height: 25px;
+ border: 0px;
+ padding-left: 15px;
+ padding-right: 9px;
+ margin-right: 5px;
+ outline: none;
+ color: #b6bfce;
+}
+
+.gas-menu{
+ margin-left:18px;
+float: right;
+height: inherit;
+}
+
+.gas-options{
+ height: 17px;
+ width: auto;
+ margin-top:16px;
+ margin-left:49px;
+ display: block;
+
+}
+
+.container {
+ float:left;
+ position: relative;
+ padding-left: 36px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-family: Myriad Pro;
+ font-size: 14px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ color: #b6bfce;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+ position: absolute;
+ top: -2px;
+ left: 0;
+ height: 19px;
+ width: 19px;
+ background-color: #6dd3f0c2;
+ border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+ background-color: #7ad9f3e8;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+ background-color: #81e6d5ad;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+top: 5px;
+left: 5px;
+width: 9px;
+height: 9px;
+border-radius: 50%;
+background: #4aceb7;
+}
+
+.bill-bar{
+  margin-top:18px;
+height:20px;
+width: 578px;
+
+}
+.left-bill{
+  display: inline-block;
+margin-left:49px;
+height: inherit;
+width: 200px;
+
+}
+.mo-img{
+  float: left;
+height:20px; 
+}
+.mo-img-calender{
+display: table-cell;
+vertical-align: middle;
+}
+
+.text-mon{
+  margin-top:2px;
+  margin-left:12px;
+  float: left;
+ font-family: Myriad Pro;
+ font-size: 14px;
+ text-align: left;
+ color: #9da8bc;
+}
+.right-bill{
+display: inline-block;
+float: right;
+
+width: auto;
+height: inherit;
+}
+
+
+
+.mess-tariff{
+display: block;
+ 
+}
+.messages{
+  box-shadow: 0px 10px 20px 0 rgba(0, 173, 228, 0.15);
+  border-radius: 10px;
+  width:290px;
+ margin-top:18px;
+ height: 222px;
+float:left;
+ 
+}
+.header-mess{
+
+
+  margin-right:21px;
+  display: block;
+  
+  height:57px;
+}
+.message-recieved{
+  display: block;
+
+  margin-left:20px;
+  margin-right:20px;
+  height:45px;
+  box-shadow: 0px 6px 20px 0 rgba(0, 173, 228, 0.15);
+  border-radius: 5px;
+}
+.texts-message{
+  margin-top:9px;
+  margin-bottom: 8px;
+  margin-left:12px;
+  display:inline-block;
+  float:left;
+  width: 78%;
+
+}
+.message-text-recieved{
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Myriad Pro;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+
+  letter-spacing: normal;
+  text-align: left;
+  color: #78859a;
+
+}
+.tariff{
+  width:290px;
+ margin-top:18px;
+ margin-left:23px;
+ height: 222px;
+ float:left;
+box-shadow: 0px 10px 20px 0 rgba(0, 173, 228, 0.15);
+ border-radius: 10px;
+
+}
+.details-tariff{
+
+  width: 100%;
+  height: 89px;
+  display:block;
+
+}
+.details-tariff-left{
+display: inline-block;
+float: left;
+height: 100px;
+border-right-style: solid;
+border-width: 1px;
+border-color: #e5e9f2;
+width: 50%;
+
+}
+.more-tariff{
+  height: 50px;
+  widows: 30px;
+  display: block;
+  
+}
+.meter { 
+  margin-left: 22px;
+  margin-right: 18px;
+  display: block;
+	height: 4px; 
+  margin-top: 17px;
+	background: #e4f6fb;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+ 
+  background-image: linear-gradient(to right, #4dc3e4, #a1e9d9);
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-360{
+display:inline-block;
+float:left;
+margin-left:12px;
+}
+.right-hand-screen{
+ width: 50%;
+ height: 670px;
+ float:right;
+
+}
+.electric-usage-graph{
+ width: auto;
+ height: 370px;
+display: block;
+margin-left:11px;
+border-radius: 10px;
+padding-top:24px;
+box-shadow: 0px 10px 20px 0 rgba(0, 173, 228, 0.15);
+}
+.header-electric{
+  margin-top:7px;
+  height: 26px;
+  width: 580px;
+ 
+ }
+.settings-section{
+  margin-top:16px;
+  width: 100%;
+  height:15px;
+  background-color: #4dc3e4;
+}
